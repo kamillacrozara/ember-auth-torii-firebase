@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'ember-auth-torii-firebase',
     environment: environment,
@@ -19,12 +19,29 @@ module.exports = function(environment) {
     },
 
     firebase: {
-        apiKey: "AIzaSyCttCtCcT6k-twyMNSWXYv7eQiRIcsZ0PE",
-        authDomain: "ember-auth-torii-firebase.firebaseapp.com",
-        databaseURL: "https://ember-auth-torii-firebase.firebaseio.com",
-        storageBucket: "ember-auth-torii-firebase.appspot.com",
-        messagingSenderId: "536851694350"
-    }
+      apiKey: "AIzaSyCttCtCcT6k-twyMNSWXYv7eQiRIcsZ0PE",
+      authDomain: "ember-auth-torii-firebase.firebaseapp.com",
+      databaseURL: "https://ember-auth-torii-firebase.firebaseio.com",
+      storageBucket: "ember-auth-torii-firebase.appspot.com",
+      messagingSenderId: "536851694350"
+    },
+
+    torii: {
+      // a 'session' property will be injected on routes and controllers
+      sessionServiceName: 'session',
+      providers: {
+        'facebook-oauth2': {
+          apiKey: '1781020008840025',
+          redirectUri: '/protected' // default is the current URL
+        },
+        'twitter-oauth2': {
+          apiKey: 'bEi4HU1WdVTmKJhMXeu2KPK3F',
+          redirectUri: '/protected' // default is the current URL
+        }
+      }
+    } /* jshint node: true */
+
+
 
   };
 
