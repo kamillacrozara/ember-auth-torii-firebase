@@ -16,15 +16,24 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    firebase: {
+        apiKey: "AIzaSyCttCtCcT6k-twyMNSWXYv7eQiRIcsZ0PE",
+        authDomain: "ember-auth-torii-firebase.firebaseapp.com",
+        databaseURL: "https://ember-auth-torii-firebase.firebaseio.com",
+        storageBucket: "ember-auth-torii-firebase.appspot.com",
+        messagingSenderId: "536851694350"
     }
+
   };
 
   if (environment === 'development') {
-    // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    // ENV.APP.LOG_TRANSITIONS = true;
-    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-    // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.LOG_RESOLVER = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    ENV.APP.LOG_TRANSITIONS = true;
+    ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
