@@ -1,9 +1,24 @@
 @import "bootstrap";
 
-.intro-header {
-    padding-top: 70px;
+.login-container {
+  padding-top: 70px;
 }
 
 .fa {
-    padding: 15px 15px 15px 15px;
+  padding: 15px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+  cursor: pointer;
+}
+
+.fa-google-plus-square {
+  color: red;
+  cursor: pointer;
 }

@@ -29,6 +29,7 @@ module.exports = function (environment) {
     torii: {
       // a 'session' property will be injected on routes and controllers
       sessionServiceName: 'session',
+
       providers: {
         'facebook-oauth2': {
           apiKey: '1781020008840025',

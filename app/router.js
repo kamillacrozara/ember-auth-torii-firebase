@@ -5,8 +5,9 @@ const Router = Ember.Router.extend({
   location: config.locationType
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('protected');
+  this.route('login');
 });
 
 export default Router;

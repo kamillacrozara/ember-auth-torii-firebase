@@ -1,5 +1,11 @@
 <center>
-<i class="fa fa-facebook-square fa-5x" style="color:#3b5998" aria-hidden="true"></i>
-<i class="fa fa-twitter-square fa-5x" style="color:#55acee" aria-hidden="true"></i>
-<i class="fa fa-google-plus-square fa-5x" style="color:red" aria-hidden="true"></i>
+
+
+<button {{action "signInViaFacebook"}} > Facebook </button>
+
+  {{fa-icon "facebook-square" size=5 click=(action "signInViaFacebook")}}
+  {{fa-icon "twitter-square" size=5}}
+  {{fa-icon "google-plus-square" size=5}}
+
+
 </center>
