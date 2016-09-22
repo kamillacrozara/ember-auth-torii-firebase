@@ -4,11 +4,11 @@ export default Ember.Component.extend({
 
   actions: {
     signInViaFacebook() {
-      console.log("Sending action up");
-      this.sendAction();
+      console.log("Received click");
+      this.sendAction("click");
     },
-    buttonClicked(param) {
-      this.sendAction('action', param);
+    buttonClicked() {
+      this.sendAction('action');
     }
   }
 });
